@@ -1,0 +1,83 @@
+.header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.column{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: 25px;
+}
+
+.subcolumn{
+    flex-basis:10%;
+    border: 2px solid #e3f5b39c;
+    padding: 9px;
+    border-left: 5px solid blue;
+}
+
+.btn{
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    top: -25px;
+    background-color: blue;
+    color: white;
+    border: none;
+    height: 28px;
+    width: 130px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+table.GeneratedTable {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #ebe9e0;
+    border-style: solid;
+    color: #000000;
+  }
+  
+  table.GeneratedTable td, table.GeneratedTable th {
+    border-width: 2px;
+    border-color: #ebe9e0;
+    border-style: solid;
+    padding: 3px;
+  }
+  
+  table.GeneratedTable thead {
+    background-color: #9e707c;
+  }
+
+
+
+
+  
+
+
+@media only screen and (max-width: 600px) {
+    .subcolumn{
+        flex-basis:26%;
+        border: 2px solid #e3f5b39c;
+        padding: 9px;
+        border-left: 2px solid blue;
+    }
+    .column{
+        margin-left: 9px;
+    }
+    .btn{
+         
+            float: right;
+            margin-right: 8px;
+            position: relative;
+            top: 24px;
+        }
+    
+   
+  }
