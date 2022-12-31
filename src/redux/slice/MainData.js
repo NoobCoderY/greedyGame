@@ -2,7 +2,7 @@ import {createSlice,createAsyncThunk} from "@reduxjs/toolkit"
 
 // Action
 export const fetchMainData = createAsyncThunk("fetchMainData", async (dateVal ,dateVal2) => {
-    const response = await fetch(`http://go-dev.greedygame.com/v3/dummy/report?startDate=${dateVal}&endDate=2017-06-02`);
+    const response = await fetch(`http://go-dev.greedygame.com/v3/dummy/report?startDate=2017-06-02&endDate=2017-06-03`);
     return response.json();
   });
 
