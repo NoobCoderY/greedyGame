@@ -11,33 +11,33 @@ const Card = () => {
   
   let arr2=["date",
   "app_id",
-  " request",
-  "response",
-  "impression",
-  "Fill Rate ",
+  " requests",
+  "responses",
+  "impressions",
+  "Fill Rate",
   "CTR"]
   const [arr, setarr] = useState([
     "date",
       "app_id",
-      " request",
-      "response",
+      " requests",
+      "responses",
       "impression",
       
   ])
   const [col, setCol] = useState([
     "date",
     "app_id",
-    " request",
-    "response",
-    "Impression",
-    "Fill Rate ",
+    " requests",
+    "responses",
+    "impression",
+    "Fill Rate",
     "CTR",
   ]);
   const [col1, setCol1] = useState([
     "date",
     "app_id",
-    " request",
-    "response",
+    " requests",
+    "responses",
     "impression",
   ]);
   const state = useSelector((state) => state);
@@ -67,10 +67,8 @@ const Card = () => {
     }
   };
   const handleChange1 = () => {
-    setCol1([arr]);
+    setCol1(arr);
   };
-  // console.log("yash", col1);
-  // console.log("date",dateVal)
   
 
   return (
@@ -79,8 +77,8 @@ const Card = () => {
       <div className="header1">
         <div className="date">
           <input type="date" value={dateVal} onChange={(e)=>{setdateVal(e.target.value)}}></input>
-          <input type="date" value={dateVal2} onChange={(e)=>{setdate2Val(e.target.value)}} 
-          style={{marginLeft:"10px"}}></input>
+          {/* <input type="date" value={dateVal2} onChange={(e)=>{setdate2Val(e.target.value)}} 
+          style={{marginLeft:"10px"}}></input> */}
         </div>
         {/* <div className="setting">
           <h4>setting</h4>
@@ -89,7 +87,7 @@ const Card = () => {
       <div className="column">
         {col.map((key) => {
           return (
-            <div
+            <div 
               className="subcolumn"
               onClick={() => {
                 handleChange(key);
